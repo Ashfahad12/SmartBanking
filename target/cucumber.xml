@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.478" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-11-15T09:33:47.789167Z">
+<testcase classname="Login functionality test for Smart Banking" name="Login should not pass with null username and valid password" time="0.087">
+<system-out><![CDATA[
+Given opened the browser....................................................passed
+And go to application login page............................................passed
+When enter null username....................................................passed
+And enter valid password....................................................passed
+And click the login button..................................................passed
+Then login should fail & invalid username or password message should be visible.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality test for Smart Banking" name="Login should not pass with null username and null password" time="0.088">
+<system-out><![CDATA[
+Given opened the browser....................................................passed
+And go to application login page............................................passed
+When enter null username....................................................passed
+And enter null password.....................................................passed
+And click the login button..................................................passed
+Then login should fail & invalid username or password message should be visible.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality test for Smart Banking" name="Login should not pass with invalid username and valid password" time="0.078">
+<system-out><![CDATA[
+Given opened the browser....................................................passed
+And go to application login page............................................passed
+When enter invalid username.................................................passed
+And enter valid password....................................................passed
+And click the login button..................................................passed
+Then login should fail & invalid username or password message should be visible.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality test for Smart Banking" name="Login should pass with valid credentials" time="0.084">
+<system-out><![CDATA[
+Given opened the browser....................................................passed
+And go to application login page............................................passed
+When enter valid username...................................................passed
+And enter valid password....................................................passed
+And click the login button..................................................passed
+Then login should pass & logout button should be visible....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality test for Smart Banking" name="Login should not pass with valid username and invalid password" time="0.086">
+<system-out><![CDATA[
+Given opened the browser....................................................passed
+And go to application login page............................................passed
+When enter valid username...................................................passed
+And enter invalid password..................................................passed
+And click the login button..................................................passed
+Then login should fail & invalid username or password message should be visible.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality test for Smart Banking" name="Login should not pass with valid username and null password" time="0.072">
+<system-out><![CDATA[
+Given opened the browser....................................................passed
+And go to application login page............................................passed
+When enter valid username...................................................passed
+And enter null password.....................................................passed
+And click the login button..................................................passed
+Then login should fail & invalid username or password message should be visible.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality test for Smart Banking" name="Login should not pass with invalid credentials" time="0.081">
+<system-out><![CDATA[
+Given opened the browser....................................................passed
+And go to application login page............................................passed
+When enter invalid username.................................................passed
+And enter invalid password..................................................passed
+And click the login button..................................................passed
+Then login should fail & invalid username or password message should be visible.passed
+]]></system-out>
+</testcase>
+</testsuite>
