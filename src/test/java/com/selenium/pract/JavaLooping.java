@@ -15,10 +15,10 @@ public class JavaLooping {
 		driver.manage().window().maximize();
 		driver.get("https://demo.guru99.com/test/newtours/");
 		
-		//This code below with 1 forward slash brings 11 menu bar buttons to click, including 2 dropdown button
+		//This code below with 1 forward slash (/li) brings the menu bar buttons only to click, including 2 dropdown button
 		List<WebElement> menubar = driver.findElements(By.xpath("//*[@class='nav navbar-nav']/li"));
 		
-		//This code below with 2 forward slash brings 35 menu bar buttons to click, including all the buttons in each individual dropdown link
+		//This code below with 2 forward slash (//a) brings 35 menu bar buttons to click, including all the buttons in each individual dropdown link
 		//List<WebElement> menubar = driver.findElements(By.xpath("//*[@class='nav navbar-nav']//a"));
 		
 		System.out.println(menubar.size());
